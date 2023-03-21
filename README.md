@@ -17,7 +17,7 @@ A biblioteca utilizada para realizar essa tarefa se chama "SweetAlert".
 ## Imagens
 
 Tela principal:
-![add-to-cat-img](https://user-images.githubusercontent.com/76922943/226728884-2a4d5cef-f20e-4b15-964b-c3a584f0d518.png)
+![add-to-cat-img](https://user-images.githubusercontent.com/76922943/226728884-2a4d5cef-f20e-4b15-964b-c3a584f0d518.png | width=100)
 
 Mensagem de erro:
 ![add-to-cat-error-img](https://user-images.githubusercontent.com/76922943/226729174-5df1bae8-1124-4d19-a05b-7c1058094447.png)
