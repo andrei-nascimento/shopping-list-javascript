@@ -6,6 +6,8 @@ O banco de dados escolhido foi o Firebase por ser simples, funcional e pela atua
 
 A ideia para construção do app veio de um curso de Firebase que realizei na plataforma Scrimba. Ótima opção para estudantes de tecnologia.
 
+Acesso ao app: https://add-to-cat.netlify.app/
+
 ## Funcionamento
 
 O app é bem intuitivo e possui apenas um botão que adiciona o item digitado na lista.
@@ -17,10 +19,12 @@ A biblioteca utilizada para realizar essa tarefa se chama "SweetAlert".
 ## Imagens
 
 Tela principal:
-![add-to-cat-img](https://user-images.githubusercontent.com/76922943/226728884-2a4d5cef-f20e-4b15-964b-c3a584f0d518.png | width=100)
+
+![add-to-cat-img-pq](https://user-images.githubusercontent.com/76922943/226735324-6a84f345-3310-4030-9717-4f7d3e774044.png)
 
 Mensagem de erro:
-![add-to-cat-error-img](https://user-images.githubusercontent.com/76922943/226729174-5df1bae8-1124-4d19-a05b-7c1058094447.png)
+
+![add-to-cat-error-img-pq](https://user-images.githubusercontent.com/76922943/226735587-47c02cc8-15dc-4be9-84d4-8b004988590d.png)
 
 ## Features
 
