@@ -14,7 +14,7 @@ html, body {
 }
 
 img {
-  width: 150px;
+  width: 200px;
   margin: 0 auto;
 }
 
@@ -32,18 +32,19 @@ input {
 
 button {
   color: #FDFDFD;
-  background-color: #AC485A;
+  background-color: #ee91c0;
   border: 0;
   padding: 15px;
   border-radius: 8px;
   font-size: 20px;
   text-align: center;
   font-family: 'Rubik', sans-serif;
+  font-weight: bold;
 }
 
 button:hover {
   color: #FDFDFD;
-  background-color: #222222;
+  background-color: #c5aee9;
   cursor: pointer;
 }
 
@@ -66,6 +67,6 @@ ul li {
 }
 
 ul li:hover {
-  background-color: #f7e9c6;
+  background-color: #eeebc8;
   cursor: pointer;
 }
