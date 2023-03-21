@@ -23,21 +23,24 @@ addButtonEl.addEventListener("click", function() {
 })
 
 onValue(shoppingListInDB, function(snapshot) {
-  // Armazena as keys e values dos itens na variável
-  let itemsArray = Object.entries(snapshot.val())
   
-  clearShoppingListEl()
-  
-  // Lista todos os itens adicionados
-  for (let i = 0; i < itemsArray.length; i++) {
-    let currentItem = itemsArray[i]
-    
-    // Armazena a key/id do item
-    let currentItemID = currentItem[0]
-    // Armazena o value do item
-    let currentItemValue = currentItem[1]
-
-    appendItemToShoppingListEl(currentItem)
+  if (snapshot.exists()) {
+    // Armazena as keys e values dos itens na variável
+    let itemsArray = Object.entries(snapshot.val())
+    // Evita duplicação dos items cadastrados
+    clearShoppingListEl()
+    // Lista todos os itens adicionados
+    for (let i = 0; i < itemsArray.length; i++) {
+      let currentItem = itemsArray[i]
+      // Armazena a key/id do item
+      let currentItemID = currentItem[0]
+      // Armazena o value do item
+      let currentItemValue = currentItem[1]
+        
+      appendItemToShoppingListEl(currentItem)
+    }    
+  } else {
+    shoppingListEl.innerHTML = "No items here... yet"
   }
 })
 
