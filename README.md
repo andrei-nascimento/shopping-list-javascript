@@ -16,6 +16,8 @@ Para remover algum item da lista basta clicar ou tocar duas vezes no próprio it
 Caso o usuário tente adicionar algum item sem ter digitado nada no campo de input, será apresentada uma mensagem de erro solicitando o nome do produto.
 A biblioteca utilizada para realizar essa tarefa se chama "SweetAlert".
 
+Em situações em que a lista está vazia, um texto é exibido na tela dizendo que não há itens registrados. 
+
 ## Imagens
 
 Tela principal:
