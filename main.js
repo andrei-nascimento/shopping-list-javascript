@@ -16,9 +16,19 @@ const shoppingListEl = document.getElementById("shopping-list")
 // Adiciona o valor digitado no banco de dados e limpa o input
 addButtonEl.addEventListener("click", function() {
   let inputValue = inputFieldEl.value
-    
-  push(shoppingListInDB, inputValue)
-    
+  
+  // Não permite adicionar um produto vazio na lista
+  if(inputValue != "") {
+    push(shoppingListInDB, inputValue)
+  } else {
+    swal({
+      title: "Erro ao adicionar o item!",
+      text: "Digite o nome do produto para incluí-lo na lista",
+      icon: "error",
+      button: "Okay!",
+    });
+  }
+
   clearInputFieldEl()
 })
 
@@ -27,8 +37,10 @@ onValue(shoppingListInDB, function(snapshot) {
   if (snapshot.exists()) {
     // Armazena as keys e values dos itens na variável
     let itemsArray = Object.entries(snapshot.val())
+
     // Evita duplicação dos items cadastrados
     clearShoppingListEl()
+
     // Lista todos os itens adicionados
     for (let i = 0; i < itemsArray.length; i++) {
       let currentItem = itemsArray[i]
@@ -40,7 +52,7 @@ onValue(shoppingListInDB, function(snapshot) {
       appendItemToShoppingListEl(currentItem)
     }    
   } else {
-    shoppingListEl.innerHTML = "No items here... yet"
+    shoppingListEl.innerHTML = "Sem itens por enquanto..."
   }
 })
 
