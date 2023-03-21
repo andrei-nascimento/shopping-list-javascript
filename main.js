@@ -48,7 +48,7 @@ onValue(shoppingListInDB, function(snapshot) {
       let currentItemID = currentItem[0]
       // Armazena o value do item
       let currentItemValue = currentItem[1]
-        
+      
       appendItemToShoppingListEl(currentItem)
     }    
   } else {
