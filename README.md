@@ -1,4 +1,4 @@
-# 🛒😸 Add to Cat - Lista de compras compartilhada (Web App)
+# 🛒 Add to Cart - Lista de compras compartilhada (Web App)
 
 A aplicação "Add To Cat" é um trocadilho de "Add to Cart", sendo uma lista de compras coletiva entre determinadas pessoas com temática felina.
 O projeto foi desenvolvido em Javascript puro, utilizando CSS para estilização do layout. Pode ser usado também em dispositivos mobile já que possui responsividade.
@@ -17,6 +17,10 @@ Caso o usuário tente adicionar algum item sem ter digitado nada no campo de inp
 A biblioteca utilizada para realizar essa tarefa se chama "SweetAlert".
 
 Em situações em que a lista está vazia, um texto é exibido na tela dizendo que não há itens registrados. 
+
+## Vídeo Explicativo
+
+https://user-images.githubusercontent.com/76922943/230455117-f67c9974-1811-4e3f-88e8-1aa221d73489.mp4
 
 ## Imagens
 
